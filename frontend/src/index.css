@@ -10,7 +10,6 @@ body {
   background: #f1f1f1;
   margin: 0;
   font-family: "Poppins";
-  display: flex;
 }
 header {
   background: #fff;
@@ -22,23 +21,21 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 header a {
-  color: #ff0000;
+  color: #333;
   text-decoration: none;
 }
 .pages{
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
-
 }
 
 /* homepage */
 .home {
-  display :grid;
-  grid-template-columns: 3fr 1fr 1 fr;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
   gap: 100px;
 }
 .workout-details {
@@ -49,7 +46,6 @@ header a {
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
-
 .workout-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
@@ -69,4 +65,9 @@ header a {
   padding: 6px;
   border-radius: 50%;
   color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
 }
